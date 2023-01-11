@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+$font-heading: 'Montserrat', sans-serif;
+$font-body: 'Mulish', sans-serif;
+$gradient-color : linear-gradient(to bottom, #081221, #03080f);
+$card-color : #0e1a2b;
+$light-color: #fff;
+$text-color: #c1d1e8;
+$field-color: #182c47;
+$button-color: #5692e8;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $gradient-color no-repeat center center/cover;
+    min-height: 100vh;
+    font-family: $font-body;
+    color: $light-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-heading;
+    font-weight: 600;
+}
+
+.container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
