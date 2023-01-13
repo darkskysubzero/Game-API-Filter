@@ -1,16 +1,18 @@
 import React from "react";
 
 const GameItem = (props) => {
+
     return (
         <div className="item">
             <div className="img"></div>
             <div className="info">
-                <h3>Game Title</h3>
-                <p>Release Date: DD/MM/YYYY</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eaque iusto commodi, facere corporis molestiae fugiat amet aperiam alias rem eligendi delectus eius assumenda quam. At voluptas libero odit magni?</p>
+                <h3>{props.info.name}</h3>
+                <p>Release Date: {new Date(props.info.first_release_date).toDateString()}</p>
+                <p>{props.info.summary}</p>
             </div>
             <div className="number">
-                <p>10</p>
+                <p>{Math.round(props.info.rating)}</p>
+
             </div>
         </div>
     )
