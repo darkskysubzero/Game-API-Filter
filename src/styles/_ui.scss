@@ -151,8 +151,6 @@
     box-shadow: inset 0px 1px 5px rgba(45, 78, 225, 0.813);
 
     .img {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
         min-width: 200px;
         min-height: 200px;
         background: #000;
@@ -273,8 +271,6 @@
         height: 400px;
 
 
-
-
     }
 
     .ui {
@@ -297,7 +293,7 @@
 
         .number {
             position: absolute;
-            right: -20px;
+            right: 10px;
             top: 20px;
         }
 
